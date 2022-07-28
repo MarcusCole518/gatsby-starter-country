@@ -6,6 +6,12 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+  // default redirect
+  createRedirect({ 
+    fromPath: `/page-2`, 
+    toPath: `/cl/page-2`, 
+  }),
+  // mexico redirect
   createRedirect({ 
     fromPath: `/page-2`, 
     toPath: `/blog/page-2`, 
